@@ -1,0 +1,161 @@
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.task-column {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.task-count {
+  background-color: #007bff;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.column-title.not-started {
+  border-bottom-color: #f8d7da;
+  color: #721c24;
+}
+
+.column-title.in-progress {
+  border-bottom-color: #fff3cd;
+  color: #856404;
+}
+
+.column-title.completed {
+  border-bottom-color: #d4edda;
+  color: #155724;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.empty-column {
+  text-align: center;
+  color: #999;
+  padding: 2rem 1rem;
+}
+
+.task-item {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.task-item.high {
+  border-left: 4px solid #dc3545;
+}
+
+.task-item.medium {
+  border-left: 4px solid #ffc107;
+}
+
+.task-item.low {
+  border-left: 4px solid #28a745;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.task-name {
+  color: #333;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.status-select {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.btn-delete-task {
+  background-color: #dc3545;
+  color: white;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.btn-delete-task:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .task-list {
+    grid-template-columns: 1fr;
+  }
+
+  .task-item {
+    flex-wrap: wrap;
+  }
+
+  .task-actions {
+    width: 100%;
+  }
+}

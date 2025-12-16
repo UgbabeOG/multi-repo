@@ -1,0 +1,144 @@
+.project-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-color: #007bff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.card-description {
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.card-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.status, .priority {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.status.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.not-started {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.priority {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.priority.high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.priority.medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.priority.low {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.progress-mini {
+  margin-bottom: 1rem;
+}
+
+.progress-bar-small {
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill-small {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.3s ease;
+}
+
+.progress-text-small {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.card-owner,
+.card-due-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card-owner strong,
+.card-due-date strong {
+  color: #2c3e50;
+}

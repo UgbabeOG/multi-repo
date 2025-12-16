@@ -1,0 +1,163 @@
+.project-detail {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1.5rem;
+}
+
+.project-header h1 {
+  margin: 0;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.status-badge, .priority-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.status-badge.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.priority-badge {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.priority-badge.high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.priority-badge.medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.project-info {
+  margin-bottom: 2rem;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.meta-item strong {
+  color: #2c3e50;
+}
+
+.progress-section {
+  background-color: #f5f7fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.progress-section h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+}
+
+.progress-bar {
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.tasks-section {
+  margin-top: 2rem;
+}
+
+.tasks-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.no-tasks {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  background-color: #f5f7fa;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .add-task-form {
+    flex-direction: column;
+  }
+}
