@@ -4,5 +4,8 @@
   "private": true,
   "scripts": {
     "start": "expo start"
+  },
+  "dependencies": {
+    "expo": "^54.0.29"
   }
 }

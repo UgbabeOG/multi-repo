@@ -1,0 +1,95 @@
+.main {
+  flex: 1;
+}
+
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #fff;
+  color: #667eea;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 3rem 0;
+  color: #2c3e50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.benefits {
+  background-color: #ecf0f1;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.benefits h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 3rem 0;
+  color: #2c3e50;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.benefit h3 {
+  margin: 0 0 1rem 0;
+  color: #3498db;
+}
+
+.benefit p {
+  margin: 0;
+  color: #7f8c8d;
+}

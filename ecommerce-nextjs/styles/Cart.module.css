@@ -1,0 +1,39 @@
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartItems {
+  width: 100%;
+}
+
+.continueShoppingButton {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.continueShoppingButton:hover {
+  background-color: #2980b9;
+}
